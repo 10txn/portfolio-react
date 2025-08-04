@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { ChevronDown, Github, Linkedin, Mail, ExternalLink, Code, Palette, Zap } from 'lucide-react';
+import { ChevronDown, Github, Linkedin, Mail, ExternalLink, Code, Palette, Zap, Send } from 'lucide-react';
 import '../Portfolio.css';
 
 const Portfolio = () => {
@@ -92,13 +92,13 @@ const Portfolio = () => {
 
           <div className="hero-content">
             <h1 className="hero-title">
-              Bringing Your{' '}
+              Turning Your{' '}
               <span className="gradient-text">Visions</span>
               <br />
-              To Life
+              Into Reality
             </h1>
             <p className="hero-subtitle">
-              I specialize in creating exceptional interfaces and discord applications.
+              I specialize in creating beatiful web designs in react and making discord bots in javascript.
             </p>
             
             <div className="button-group">
@@ -129,9 +129,8 @@ const Portfolio = () => {
               <div className="about-text">
                 <h2 className="section-title">About Me</h2>
                 <p className="text-lg">
-                  Hello, I'm a young developer who creates clean interfaces in React and works
-                  in c++ enviroments with things such as game exploitation, imgui applications
-                  and bootstrappers.
+                  Hello, I'm a young developer who creates clean and pretty web designs in React and discord bots in Javascript. 
+                  I am also working on building my c++ background up with advanced imgui designs and game exploitation projects.
                 </p>
                 
                 <div className="stats-grid">
@@ -159,7 +158,7 @@ const Portfolio = () => {
                   <Palette size={32} color="#8b5cf6" />
                   <div className="skill-content">
                     <h3>Modern Design</h3>
-                    <p>I create beatiful modern interfaces for my applications and web designs.</p>
+                    <p>I create beatiful modern interfaces for my web designs.</p>
                   </div>
                 </div>
                 
@@ -175,23 +174,20 @@ const Portfolio = () => {
           </div>
         </section>
 
-        {/* Wor */}
+        {/* Work */}
         <section id="work" className="section">
           <div className="container">
             <div className="section-header">
               <h2 className="section-title">Featured Work</h2>
               <p className="section-subtitle">
-                A showcase of projects where I've contributed and made a difference
+                A showcase of some of my most recent projects.
               </p>
             </div>
 
               <div className="projects-grid">
               {[
                 { title: 'E-Commerce Demo', description: 'A simple E-Commerce demo', members: '10/07/25', tech: 'React, Node.js, MongoDB', link: 'https://simple-ecommerce-ebon.vercel.app/' },
-                 { title: 'Password Generator', description: 'A simple but amazing password generator', members: '15/03/24', tech: 'React, Node.js', link: 'https://pass-gen-azure.vercel.app/' },
-                { title: 'Roblox External', description: 'A roblox external client', members: '10/07/25', tech: 'C++', link: 'https://drive.google.com/file/d/1hx6WPFDMN_cv35855P6L2xY7TzvGQRGh/view' },
-                { title: 'DLL Injector', description: 'A dll injector built with advanced protection functionality.', members: '10/07/25', tech: 'C++', link: 'https://classroom.google.com/c/NjE1OTA3MDI3ODI5' },
-                { title: 'Discord Bot', description: 'An advanced discord bot with a beatiful modern interface.', members: '10/07/25', tech: 'Node.js, MongoDB', link: 'https://github.com/10txn/asl-bot' },
+                { title: 'WinRar Activiation', description: 'A simple WinRar activation tool', members: '04/08/25', tech: 'C++', link: 'https://github.com/10txn/WinRar-Activation-Tool'},
               ].map((project, index) => (
                 <div 
                   key={index} 
@@ -226,9 +222,9 @@ const Portfolio = () => {
 
             <div className="process-grid">
               {[
-                { step: '01', title: 'Step 1', description: 'Understanding your vision and requirements through a detailed order.' },
-                { step: '02', title: 'Step 2', description: 'Creating your code with the best modern practices and optimization.' },
-                { step: '03', title: 'Step 3', description: 'Final testing to ensure you are happy with the product.' }
+                { step: '01', title: 'Step 1', description: 'Understanding what you want to be created and your requirements via a deatiled order.'},
+                { step: '02', title: 'Step 2', description: 'Creating your order with the best modern pratices and optimization.' },
+                { step: '03', title: 'Step 3', description: 'Final testing to ensure you are happy with the product before we send it to you.' }
               ].map((process, index) => (
                 <div key={index} className="process-step">
                   <div className="process-number">{process.step}</div>
@@ -247,15 +243,18 @@ const Portfolio = () => {
             <p className="section-subtitle">More Options Coming.</p>
             <div className="contact-actions">
               <a 
-                href="mailto:jackmorley.uk@gmail.com"
+                href="discord://-/users/559067950489927691"
                 className="btn btn-primary btn-with-icon"
               >
-                <Mail size={20} />
-                <span>Send Email</span>
+                <Send size={20} />
+                <span>Discord</span>
               </a>
               <div className="social-links">
                 <a href="https://github.com/10txn" className="social-link">
                   <Github size={24} />
+                </a>
+                <a href="mailto:drakebouth.gsrp@gmail.com" className="social-link">
+                  <Mail size={24} />
                 </a>
               </div>
             </div>
