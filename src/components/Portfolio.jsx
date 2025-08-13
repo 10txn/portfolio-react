@@ -135,12 +135,12 @@ const Portfolio = () => {
                 
                 <div className="stats-grid">
                   <div className="stat-card">
-                    <div className="stat-number blue">3+</div>
+                    <div className="stat-number blue">2+</div>
                     <div className="stat-label">Years Experience</div>
                   </div>
                   <div className="stat-card">
                     <div className="stat-number purple">20+</div>
-                    <div className="stat-label">Projects Completed</div>
+                    <div className="stat-label">Public Projects Completed</div>
                   </div>
                 </div>
               </div>
@@ -158,7 +158,7 @@ const Portfolio = () => {
                   <Palette size={32} color="#8b5cf6" />
                   <div className="skill-content">
                     <h3>Modern Design</h3>
-                    <p>I create beatiful modern interfaces for my web designs.</p>
+                    <p>I create modern interfaces for my web designs.</p>
                   </div>
                 </div>
                 
@@ -166,7 +166,7 @@ const Portfolio = () => {
                   <Zap size={32} color="#ec4899" />
                   <div className="skill-content">
                     <h3>Performance</h3>
-                    <p>I optimize all solutions and websites for the fastest speed possible.</p>
+                    <p>I optimize all websites and discord bot's for the best speed possible.</p>
                   </div>
                 </div>
               </div>
@@ -186,8 +186,10 @@ const Portfolio = () => {
 
               <div className="projects-grid">
               {[
-                { title: 'E-Commerce Demo', description: 'A simple E-Commerce demo', members: '10/07/25', tech: 'React, Node.js, MongoDB', link: 'https://simple-ecommerce-ebon.vercel.app/' },
-                { title: 'WinRar Activiation', description: 'A simple WinRar activation tool', members: '04/08/25', tech: 'C++', link: 'https://github.com/10txn/WinRar-Activation-Tool'},
+                { title: 'Password Generator', description: 'An advanced password generator.', members: '10/07/25', tech: 'React, Node.js, MongoDB', link: 'https://pass-gen-azure.vercel.app/' },
+                { title: 'Gravity Cleaner', description: 'An advanced cleaner that cleans traces to obs.', members: '10/08/25', tech: 'C#', link: 'https://discord.gg/grav' },
+                { title: 'WinRar Activiation', description: 'My WinRar activation tool', members: '04/08/25', tech: 'C++', link: 'https://github.com/10txn/WinRar-Activation-Tool'},
+                { title: 'RoleBot', description: 'A discord bot that handles all your role needs. It includes things such as /rolerequest, /temprole, /autorole', members: 'COMING SOON', tech: 'Javascript', link: '#'},
               ].map((project, index) => (
                 <div 
                   key={index} 
@@ -253,7 +255,7 @@ const Portfolio = () => {
                 <a href="https://github.com/10txn" className="social-link">
                   <Github size={24} />
                 </a>
-                <a href="mailto:drakebouth.gsrp@gmail.com" className="social-link">
+                <a href="mailto:lenajoe96@gmail.com" className="social-link">
                   <Mail size={24} />
                 </a>
               </div>
